@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  flex-wrap: wrap;
+  font-family: "Jacques Francois Shadow", cursive;
+}
+
+main {
+  padding: 50px 0;
+  background-color: black;
+}
+main img[alt="Nurislomxon Yunusov"] {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 50px;
+}
+main a {
+  color: #fff;
+  text-decoration: none;
+}
+main a:hover {
+  color: #fff;
+}
+main h1 {
+  width: fit-content;
+  font-size: 60px !important;
+}
+main .text {
+  color: gray;
+}
+
+.pictures {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  background-color: black;
+}
+.pictures .row {
+  row-gap: 30px;
+}
+.pictures .row .col {
+  justify-content: center;
+}
+.pictures .row .col .card {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.pictures .row .col .card:hover {
+  opacity: 0.4;
+}
+.pictures .row .col .card img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1015px) {
+  .col-4 {
+    width: 500px !important;
+  }
+}
+@media only screen and (max-width: 422px) {
+  * {
+    width: 422px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  * {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1395px) {
+  .card {
+    width: 500px !important;
+  }
+  .card img {
+    width: 500px !important;
+    height: 500px !important;
+  }
+}/*# sourceMappingURL=my.css.map */

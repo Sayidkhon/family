@@ -1,0 +1,170 @@
+$text: #fff;
+$text_hover: #acacac;
+$primary: #000;
+$header: #072d36;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $text;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+
+.vara {
+  color: #fff;
+  * {
+    color: #fff !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.5s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  padding: 0;
+  background: transparent;
+  &:hover {
+    background: #2089a0;
+  }
+}
+
+a {
+  color: $text;
+  text-decoration: none;
+  transition: 0.5s;
+  &:hover {
+    color: $text_hover;
+  }
+}
+
+.active {
+  color: $text_hover;
+}
+
+body {
+  background-color: #072d36;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 9999;
+  position: sticky;
+  background-color: $header;
+  .container {
+    padding: 0;
+    height: 75px;
+    .navbar {
+      width: 100%;
+      height: 75px;
+      background-color: $header !important;
+      .collapse {
+        height: 75px;
+        background-color: $header !important;
+        .nav-menu {
+          gap: 50px;
+          width: 100%;
+          height: 75px;
+          display: flex;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+          background-color: $header !important;
+          .nav-item {
+            margin-top: 15px;
+            align-items: center;
+            background-color: $header;
+            a {
+              font-size: 20px;
+              background-color: $header;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.f {
+  position: relative;
+}
+
+.f:hover .a-menu {
+  top: 33px;
+  z-index: 99999999999999;
+  display: block;
+}
+
+.a-menu {
+  top: -200px;
+  width: 200px;
+  transition: 1s;
+  list-style: none;
+  position: absolute;
+  border-radius: 15px;
+  padding: 10px 0 10px 20px;
+  padding-top: 20px;
+  background-color: $header;
+}
+
+.main {
+  img {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  form {
+    width: 100%;
+    outline: none;
+    color: $primary;
+    font-size: 20px;
+    margin-top: 50px;
+
+    input {
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      background-color: #072d36;
+    }
+    .safe {
+      width: 60%;
+      padding-left: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 50px;
+      border: 1px solid #fff;
+      background-color: #072d36;
+    }
+  }
+  img[alt="Sayidxon Abduraufov"] {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 50px;
+  }
+  .map {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+  }
+}

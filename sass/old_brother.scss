@@ -1,0 +1,223 @@
+$text: #fff;
+$text_hover: #acacac;
+$primary: #000000;
+$header: #072d36;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.vara {
+  color: #fff;
+  * {
+    color: #fff !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.5s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  padding: 0;
+  background: transparent;
+  &:hover {
+    background: #2089a0;
+  }
+}
+
+a {
+  color: $text;
+  text-decoration: none;
+  transition: 0.5s;
+  &:hover {
+    color: $text_hover;
+  }
+}
+
+.active {
+  color: $text_hover;
+}
+
+body {
+  background-color: #072d36;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 9999;
+  position: sticky;
+  background-color: $header;
+  .container {
+    padding: 0;
+    height: 75px;
+    .navbar {
+      width: 100%;
+      height: 75px;
+      background-color: $header !important;
+      .collapse {
+        height: 75px;
+        background-color: $header !important;
+        .nav-menu {
+          gap: 50px;
+          width: 100%;
+          height: 75px;
+          display: flex;
+          list-style: none;
+          align-items: center;
+          justify-content: center;
+          background-color: $header !important;
+          .nav-item {
+            align-items: center;
+            background-color: $header;
+            a {
+              font-size: 20px;
+              background-color: $header;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.f {
+  position: relative;
+}
+
+.f:hover .a-menu {
+  top: 33px;
+  z-index: 99999999999999;
+  display: block;
+}
+
+.a-menu {
+  top: -200px;
+  width: 200px;
+  transition: 1s;
+  list-style: none;
+  position: absolute;
+  border-radius: 15px;
+  padding: 10px 0 10px 20px;
+  padding-top: 20px;
+  background-color: $header;
+}
+
+.vara {
+  color: #fff;
+  * {
+    color: #fff !important;
+  }
+}
+
+body {
+  background-color: #072d36;
+}
+
+main {
+  padding: 50px 0;
+  background-color: #072d36;
+  img[alt="Mohira Yunusova"],
+  img[alt="Nurislomxon Yunusov"],
+  img[alt="Buzrukxon Abduraupov"],
+  img[alt="Sayidxon Abduraufov"] {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 50px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+  h1 {
+    width: fit-content;
+    font-size: 60px !important;
+  }
+  .text {
+    color: gray;
+  }
+}
+
+.op {
+  padding: 50px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.pictures {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  background-color: #072d36;
+  .row {
+    row-gap: 150px;
+    align-items: center;
+    justify-content: center;
+    .col {
+      display: flex;
+      justify-content: center;
+      .card {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        transition: 0.2s;
+        &:hover {
+          opacity: 0.4;
+        }
+        img {
+          width: 400px;
+          height: 400px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .col-4 {
+    width: 500px !important;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  * {
+    width: 422px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  * {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1395px) {
+  .card {
+    width: 500px !important;
+  }
+  .card img {
+    width: 500px !important;
+    height: 500px !important;
+  }
+}

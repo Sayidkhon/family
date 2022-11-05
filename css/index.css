@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.vara {
+  color: #fff;
+}
+.vara * {
+  color: #fff !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  transition: 0.5s;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  padding: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: #acacac;
+}
+
+.active {
+  color: #acacac;
+}
+
+body {
+  background-color: #000;
+}
+
+.header {
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 9999;
+  position: sticky;
+  background-color: #00ff22;
+}
+.header .container {
+  padding: 0;
+}
+.header .container .navbar {
+  width: 100%;
+  height: 75px;
+  background-color: #00ff22 !important;
+}
+.header .container .navbar .collapse {
+  height: 75px;
+  background-color: #00ff22 !important;
+}
+.header .container .navbar .collapse .nav-menu {
+  gap: 50px;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #00ff22 !important;
+}
+.header .container .navbar .collapse .nav-menu .nav-item {
+  background-color: #00ff22;
+}
+.header .container .navbar .collapse .nav-menu .nav-item a {
+  font-size: 20px;
+  background-color: #00ff22;
+}
+
+.f {
+  position: relative;
+}
+
+.f:hover .a-menu {
+  top: 30px;
+  z-index: 99999999999999;
+  display: block;
+}
+
+.a-menu {
+  top: -200px;
+  width: 200px;
+  transition: 1s;
+  list-style: none;
+  position: absolute;
+  border-radius: 15px;
+  padding: 10px 0 10px 20px;
+  background-color: #00ff22;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.6;
+  background: url("../sass/assets/IMG_2843.JPG") no-repeat;
+  background-size: cover;
+}
+.main .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .row {
+  margin: 0 !important;
+  width: fit-content;
+}
+.main .container .row .col {
+  text-align: center;
+}
+.main .container .row .col h1 {
+  margin: 0;
+  width: 410px;
+  color: #ffffff;
+  opacity: 1 !important;
+  z-index: 22;
+  background-color: transparent !important;
+}/*# sourceMappingURL=index.css.map */
